@@ -1,0 +1,555 @@
+Start compute Observation 
+[32m[DEBUG] [1685176461.715707]: Tag with ID 77 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+find tag in range of[36, 71], 66 
+[32m[DEBUG] [1685176461.716044]: Tag with ID 83 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716111]: Tag with ID 89 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+find tag in range of[36, 71], 67 
+[32m[DEBUG] [1685176461.716117]: Tag with ID 76 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+find tag in range of[36, 71], 60 
+[32m[DEBUG] [1685176461.716121]: Tag with ID 95 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716124]: Tag with ID 82 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+find tag in range of[36, 71], 68 
+[32m[DEBUG] [1685176461.716127]: Tag with ID 101 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716130]: Tag with ID 88 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+find tag in range of[36, 71], 61 
+[32m[DEBUG] [1685176461.716133]: Tag with ID 75 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+find tag in range of[36, 71], 69 
+[32m[DEBUG] [1685176461.716136]: Tag with ID 94 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+find tag in range of[36, 71], 54 
+[32m[DEBUG] [1685176461.716149]: Tag with ID 81 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716154]: Tag with ID 107 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+find tag in range of[36, 71], 62 
+[32m[DEBUG] [1685176461.716158]: Tag with ID 74 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716161]: Tag with ID 100 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716164]: Tag with ID 87 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+find tag in range of[36, 71], 48 
+find tag in range of[36, 71], 55 
+find tag in range of[36, 71], 70 
+[32m[DEBUG] [1685176461.716168]: Tag with ID 80 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716171]: Tag with ID 106 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716174]: Tag with ID 93 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+find tag in range of[36, 71], 63 
+find tag in range of[36, 71], 56 
+[32m[DEBUG] [1685176461.716177]: Tag with ID 86 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716180]: Tag with ID 73 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+find tag in range of[36, 71], 49 
+[32m[DEBUG] [1685176461.716183]: Tag with ID 99 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+find tag in range of[36, 71], 71 
+[32m[DEBUG] [1685176461.716186]: Tag with ID 79 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+find tag in range of[36, 71], 64 
+find tag in range of[36, 71], 42 
+find tag in range of[36, 71], 57 
+[32m[DEBUG] [1685176461.716189]: Tag with ID 92 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716191]: Tag with ID 105 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716200]: Tag with ID 85 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716203]: Tag with ID 72 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+find tag in range of[36, 71], 50 
+[32m[DEBUG] [1685176461.716206]: Tag with ID 98 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+find tag in range of[36, 71], 36 
+find tag in range of[36, 71], 43 
+[32m[DEBUG] [1685176461.716209]: Tag with ID 78 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716212]: Tag with ID 91 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+find tag in range of[36, 71], 44 
+find tag in range of[36, 71], 51 
+find tag in range of[36, 71], 65 
+[32m[DEBUG] [1685176461.716215]: Tag with ID 104 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716218]: Tag with ID 84 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+find tag in range of[36, 71], 37 
+[32m[DEBUG] [1685176461.716221]: Tag with ID 0 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716223]: Tag with ID 97 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716226]: Tag with ID 90 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+find tag in range of[36, 71], 59 
+[32m[DEBUG] [1685176461.716228]: Tag with ID 1 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+find tag in range of[36, 71], 38 
+find tag in range of[36, 71], 45 
+[32m[DEBUG] [1685176461.716231]: Tag with ID 96 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716234]: Tag with ID 6 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716237]: Tag with ID 103 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716239]: Tag with ID 2 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716242]: Tag with ID 102 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716244]: Tag with ID 7 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+find tag in range of[36, 71], 39 
+find tag in range of[36, 71], 53 
+find tag in range of[36, 71], 46 
+[32m[DEBUG] [1685176461.716248]: Tag with ID 3 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716250]: Tag with ID 12 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716253]: Tag with ID 8 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716255]: Tag with ID 13 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+find tag in range of[36, 71], 40 
+find tag in range of[36, 71], 47 
+[32m[DEBUG] [1685176461.716258]: Tag with ID 4 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716260]: Tag with ID 9 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716263]: Tag with ID 18 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716267]: Tag with ID 5 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716270]: Tag with ID 19 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716272]: Tag with ID 14 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+find tag in range of[36, 71], 41 
+[32m[DEBUG] [1685176461.716275]: Tag with ID 10 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716287]: Tag with ID 24 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716294]: Tag with ID 15 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716299]: Tag with ID 20 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716303]: Tag with ID 11 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716306]: Tag with ID 25 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716308]: Tag with ID 16 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716311]: Tag with ID 21 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716313]: Tag with ID 30 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716316]: Tag with ID 26 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716318]: Tag with ID 17 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716321]: Tag with ID 22 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716323]: Tag with ID 31 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716326]: Tag with ID 27 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716328]: Tag with ID 23 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716330]: Tag with ID 32 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716333]: Tag with ID 28 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716335]: Tag with ID 33 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716338]: Tag with ID 29 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716340]: Tag with ID 34 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+[32m[DEBUG] [1685176461.716342]: Tag with ID 35 is only partially in image (corners outside) and will be removed from the TargetObservation.
+[0m
+detected apriltag id list 
+detected apriltag id: 0
+0 detected apriltag id: 1
+[32m[DEBUG] [1685176461.716756]: Subpix refinement failed for point: 3 with displacement: 1.94003(point removed) 
+[0m
+detected apriltag id: 2
+2 detected apriltag id: 3
+3 detected apriltag id: 4
+4 detected apriltag id: 5
+[32m[DEBUG] [1685176461.716805]: Subpix refinement failed for point: 11 with displacement: 2.65624(point removed) 
+[0m
+detected apriltag id: 6
+6 detected apriltag id: 7
+7 detected apriltag id: 8
+[32m[DEBUG] [1685176461.716812]: Subpix refinement failed for point: 40 with displacement: 1.73511(point removed) 
+[0m
+detected apriltag id: 9
+9 detected apriltag id: 10
+10 detected apriltag id: 11
+11 detected apriltag id: 12
+12 detected apriltag id: 13
+[32m[DEBUG] [1685176461.716821]: Subpix refinement failed for point: 51 with displacement: 1.76586(point removed) 
+[0m
+detected apriltag id: 14
+14 detected apriltag id: 15
+15 detected apriltag id: 17
+17 detected apriltag id: 18
+[32m[DEBUG] [1685176461.716826]: Subpix refinement failed for point: 84 with displacement: 1.91138(point removed) 
+[0m
+detected apriltag id: 19
+[32m[DEBUG] [1685176461.716829]: Subpix refinement failed for point: 75 with displacement: 1.22616(point removed) 
+[0m
+detected apriltag id: 20
+20 detected apriltag id: 21
+[32m[DEBUG] [1685176461.716832]: Subpix refinement failed for point: 78 with displacement: 1.8432(point removed) 
+[0m
+detected apriltag id: 23
+23 detected apriltag id: 24
+24 detected apriltag id: 25
+25 detected apriltag id: 26
+26 detected apriltag id: 27
+27 detected apriltag id: 28
+28 detected apriltag id: 29
+[32m[DEBUG] [1685176461.716838]: Subpix refinement failed for point: 107 with displacement: 1.65283(point removed) 
+[0m
+detected apriltag id: 30
+30 detected apriltag id: 31
+[32m[DEBUG] [1685176461.716841]: Subpix refinement failed for point: 134 with displacement: 1.69086(point removed) 
+[0m
+config read
+  Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+target image read
+corners:  [[3080.38037109 1417.28723145]
+ [3194.5        1531.25915527]
+ [3364.54541016 1700.68603516]
+ [3489.21020508 1828.52453613]
+ [3515.49243164 1855.02648926]
+ [3646.74536133 1987.70605469]
+ [3674.42138672 2015.9921875 ]
+ [3810.85205078 2156.23754883]
+ [3097.74658203 1294.00549316]
+ [3216.17749023 1409.98413086]
+ [3392.81811523 1581.75146484]
+ [3523.5246582  1710.38452148]
+ [3551.06005859 1737.88818359]
+ [3687.57543945 1873.12536621]
+ [3715.70874023 1901.83068848]
+ [3859.58203125 2044.41235352]
+ [3102.16992188 1266.05725098]
+ [3221.56469727 1381.49401855]
+ [3247.18652344 1406.24694824]
+ [3373.18188477 1528.15039062]
+ [3559.30126953 1709.89489746]
+ [3697.41381836 1846.77966309]
+ [3726.09179688 1875.03137207]
+ [3871.28076172 2018.64111328]
+ [3901.91870117 2048.91088867]
+ [4052.96679688 2199.76855469]
+ [3121.48388672 1132.63842773]
+ [3245.57788086 1248.88244629]
+ [3272.30004883 1273.38134766]
+ [3402.765625   1398.42919922]
+ [3598.0480957  1582.12109375]
+ [3742.54150391 1720.54052734]
+ [3772.97021484 1750.21276855]
+ [3925.02539062 1896.07446289]
+ [3956.35766602 1926.62341309]
+ [4116.68164062 2081.84570312]
+ [3126.14526367 1102.08093262]
+ [3251.37426758 1218.82165527]
+ [3438.40600586 1393.13476562]
+ [3577.34692383 1524.41052246]
+ [3606.94921875 1551.62536621]
+ [3752.84399414 1691.89379883]
+ [3969.44824219 1898.16357422]
+ [4131.40771484 2054.23828125]
+ [3147.93603516  957.13165283]
+ [3278.12255859 1073.63415527]
+ [3473.40429688 1249.86621094]
+ [3618.78833008 1383.59008789]
+ [3649.70825195 1411.21630859]
+ [3802.7565918  1552.74414062]
+ [4030.72900391 1763.18493652]
+ [4200.27490234 1922.7677002 ]
+ [3481.16259766 1217.61413574]
+ [3628.07836914 1350.7434082 ]
+ [4044.48754883 1731.88061523]
+ [4216.7734375  1892.03417969]
+ [3518.98583984 1060.58496094]
+ [3673.40380859 1194.70996094]
+ [4112.16015625 1582.62255859]
+ [4294.43896484 1745.66015625]
+ [3181.88330078  730.66101074]
+ [3320.25683594  847.32507324]
+ [3349.58569336  873.19750977]
+ [3496.4597168   998.15155029]
+ [3527.73022461 1024.45751953]
+ [3683.49194336 1160.13964844]
+ [3716.71630859 1187.22302246]
+ [3881.02709961 1332.73974609]
+ [3916.02050781 1361.94433594]
+ [4090.90844727 1516.32348633]
+ [3207.3894043   557.66937256]
+ [3351.85620117  674.71331787]
+ [3383.61303711  700.29956055]
+ [3536.42895508  825.57489014]
+ [3569.13525391  852.75360107]
+ [3732.9621582   987.06347656]
+ [3767.6081543  1016.52429199]
+ [3941.64599609 1161.33496094]
+ [3978.01513672 1192.29711914]
+ [4162.58398438 1347.88195801]
+ [3212.96704102  519.53192139]
+ [3358.44165039  635.32440186]
+ [3578.12451172  814.04772949]
+ [3744.07495117  948.6071167 ]
+ [3778.859375    977.64428711]
+ [3955.43579102 1123.39538574]
+ [3992.06713867 1153.96801758]
+ [4179.09228516 1310.10241699]
+ [4218.15673828 1343.32409668]
+ [4417.30908203 1509.30236816]
+ [3240.33203125  331.37112427]
+ [3393.70336914  446.26116943]
+ [3623.94165039  622.95184326]
+ [3798.24853516  759.05102539]
+ [3835.62915039  787.06085205]
+ [4020.5859375   933.56964111]
+ [4060.49145508  964.00720215]
+ [4258.44433594 1123.23925781]
+ [4300.66943359 1155.75024414]
+ [4512.74414062 1326.02685547]]
+corners size:  100
+detected apriltag id: 32
+32 detected apriltag id: 33
+33 detected apriltag id: 34
+34 detected apriltag id: 35
+35 clear detections 
+return!!!
+End compute Observation 
+  Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 2 3 4 6 7 9 10 11 12 14 15 17 20 23 24 25 26 27 28 30 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+36 38 39 40 42 43 45 46 47 48 50 51 53 56 59 60 61 62 63 64 66 68 69 70 71   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+36 38 39 40 42 43 45 46 47 48 50 51 53 56 59 60 61 62 63 64 66 68 69 70 71   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+36 38 39 40 42 43 45 46 47 48 50 51 53 56 59 60 61 62 63 64 66 68 69 70 71   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+36 38 39 40 42 43 45 46 47 48 50 51 53 56 59 60 61 62 63 64 66 68 69 70 71   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+36 38 39 40 42 43 45 46 47 48 50 51 53 56 59 60 61 62 63 64 66 68 69 70 71   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+  Camera model: pinhole
+  Focal length: [4246.77883083411, 4236.895592965312]
+  Principal point: [2586.610148883905, 1739.812190889978]
+  Distortion model: equidistant
+  Distortion coefficients: [0.12115486705690216, 0.5305853335481132, -1.405559657552631, 2.238033073618354]
+detected apriltag id list 
+36 38 39 40 42 43 45 46 47 48 50 51 53 56 59 60 61 62 63 64 66 68 69 70 71   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+  Camera model: pinhole
+  Focal length: [4246.77883083411, 4236.895592965312]
+  Principal point: [2586.610148883905, 1739.812190889978]
+  Distortion model: equidistant
+  Distortion coefficients: [0.12115486705690216, 0.5305853335481132, -1.405559657552631, 2.238033073618354]
+detected apriltag id list 
+36 38 39 40 42 43 45 46 47 48 50 51 53 56 59 60 61 62 63 64 66 68 69 70 71   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+  Camera model: pinhole
+  Focal length: [4246.77883083411, 4236.895592965312]
+  Principal point: [2586.610148883905, 1739.812190889978]
+  Distortion model: equidistant
+  Distortion coefficients: [0.12115486705690216, 0.5305853335481132, -1.405559657552631, 2.238033073618354]
+detected apriltag id list 
+36 38 39 40 42 43 45 46 47 48 50 51 53 56 59 60 61 62 63 64 66 68 69 70 71   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+  Camera model: pinhole
+  Focal length: [4246.77883083411, 4236.895592965312]
+  Principal point: [2586.610148883905, 1739.812190889978]
+  Distortion model: equidistant
+  Distortion coefficients: [0.12115486705690216, 0.5305853335481132, -1.405559657552631, 2.238033073618354]
+detected apriltag id list 
+36 38 39 40 42 43 45 46 47 48 50 51 53 56 59 60 61 62 63 64 66 68 69 70 71   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+  Camera model: pinhole
+  Focal length: [4246.77883083411, 4236.895592965312]
+  Principal point: [2586.610148883905, 1739.812190889978]
+  Distortion model: equidistant
+  Distortion coefficients: [0.12115486705690216, 0.5305853335481132, -1.405559657552631, 2.238033073618354]
+detected apriltag id list 
+36 38 39 40 42 43 45 46 47 48 50 51 53 56 59 60 61 62 63 64 66 68 69 70 71   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+  Camera model: pinhole
+  Focal length: [4246.77883083411, 4236.895592965312]
+  Principal point: [2586.610148883905, 1739.812190889978]
+  Distortion model: equidistant
+  Distortion coefficients: [0.12115486705690216, 0.5305853335481132, -1.405559657552631, 2.238033073618354]
+detected apriltag id list 
+36 38 39 40 42 43 45 46 47 48 50 51 53 56 59 60 61 62 63 64 66 68 69 70 71   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+  Camera model: pinhole
+  Focal length: [4246.77883083411, 4236.895592965312]
+  Principal point: [2586.610148883905, 1739.812190889978]
+  Distortion model: equidistant
+  Distortion coefficients: [0.12115486705690216, 0.5305853335481132, -1.405559657552631, 2.238033073618354]
+detected apriltag id list 
+36 38 39 40 42 43 45 46 47 48 50 51 53 56 59 60 61 62 63 64 66 68 69 70 71   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+  Camera model: pinhole
+  Focal length: [4246.77883083411, 4236.895592965312]
+  Principal point: [2586.610148883905, 1739.812190889978]
+  Distortion model: equidistant
+  Distortion coefficients: [0.12115486705690216, 0.5305853335481132, -1.405559657552631, 2.238033073618354]
+detected apriltag id list 
+62 64 65 67 71   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+  Camera model: pinhole
+  Focal length: [4246.77883083411, 4236.895592965312]
+  Principal point: [2586.610148883905, 1739.812190889978]
+  Distortion model: equidistant
+  Distortion coefficients: [0.12115486705690216, 0.5305853335481132, -1.405559657552631, 2.238033073618354]
+detected apriltag id list 
+36 37 38 39 40 42 43 44 45 46 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+  Camera model: pinhole
+  Focal length: [4246.77883083411, 4236.895592965312]
+  Principal point: [2586.610148883905, 1739.812190889978]
+  Distortion model: equidistant
+  Distortion coefficients: [0.12115486705690216, 0.5305853335481132, -1.405559657552631, 2.238033073618354]
+detected apriltag id list 
+36 37 38 39 40 42 43 44 45 46 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+  Camera model: pinhole
+  Focal length: [4246.77883083411, 4236.895592965312]
+  Principal point: [2586.610148883905, 1739.812190889978]
+  Distortion model: equidistant
+  Distortion coefficients: [0.12115486705690216, 0.5305853335481132, -1.405559657552631, 2.238033073618354]
+detected apriltag id list 
+36 37 38 39 40 42 43 44 45 46 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+  Camera model: pinhole
+  Focal length: [4246.77883083411, 4236.895592965312]
+  Principal point: [2586.610148883905, 1739.812190889978]
+  Distortion model: equidistant
+  Distortion coefficients: [0.12115486705690216, 0.5305853335481132, -1.405559657552631, 2.238033073618354]
+detected apriltag id list 
+36 37 38 39 40 42 43 44 45 46 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+  Camera model: pinhole
+  Focal length: [4246.77883083411, 4236.895592965312]
+  Principal point: [2586.610148883905, 1739.812190889978]
+  Distortion model: equidistant
+  Distortion coefficients: [0.12115486705690216, 0.5305853335481132, -1.405559657552631, 2.238033073618354]
+detected apriltag id list 
+36 37 38 39 40 42 43 44 45 46 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+  Camera model: pinhole
+  Focal length: [4246.77883083411, 4236.895592965312]
+  Principal point: [2586.610148883905, 1739.812190889978]
+  Distortion model: equidistant
+  Distortion coefficients: [0.12115486705690216, 0.5305853335481132, -1.405559657552631, 2.238033073618354]
+detected apriltag id list 
+36 37 38 39 40 42 43 44 45 46 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 

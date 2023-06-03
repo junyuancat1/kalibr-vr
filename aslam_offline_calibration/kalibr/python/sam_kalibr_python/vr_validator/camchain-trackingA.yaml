@@ -1,0 +1,20 @@
+cam0:
+  cam_overlaps: []
+  camera_model: pinhole
+  distortion_coeffs:
+  - -0.013057856
+  - 0.026553879
+  - -0.01489986
+  - 0.0031719355
+  distortion_model: equidistant
+  intrinsics:
+  - 276.28156
+  - 276.28156
+  - 317.99796
+  - 240.97645
+
+  # <Calibration size="640 480 " principal_point="317.99796 240.97645 " focal_length="276.28156 276.28156 " model="FISHEYE_4_PARAMETERS" radial_distortion="-0.013057856 0.026553879 -0.01489986 0.0031719355 0 0 " distortion_limit="4.040000" undistortion_limit="1.339465" />
+  resolution:
+  - 640
+  - 480
+  rostopic: /cam0/image_raw

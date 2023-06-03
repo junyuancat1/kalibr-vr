@@ -1,0 +1,104 @@
+  Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+77 78 79 80 81 84 85 86 89 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+  Camera model: pinhole
+  Focal length: [4246.77883083411, 4236.895592965312]
+  Principal point: [2586.610148883905, 1739.812190889978]
+  Distortion model: equidistant
+  Distortion coefficients: [0.12115486705690216, 0.5305853335481132, -1.405559657552631, 2.238033073618354]
+detected apriltag id list 
+77 78 79 80 81 84 85 86 89 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+  Camera model: pinhole
+  Focal length: [4246.77883083411, 4236.895592965312]
+  Principal point: [2586.610148883905, 1739.812190889978]
+  Distortion model: equidistant
+  Distortion coefficients: [0.12115486705690216, 0.5305853335481132, -1.405559657552631, 2.238033073618354]
+detected apriltag id list 
+77 78 79 80 81 84 85 86 89 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+  Camera model: pinhole
+  Focal length: [4246.77883083411, 4236.895592965312]
+  Principal point: [2586.610148883905, 1739.812190889978]
+  Distortion model: equidistant
+  Distortion coefficients: [0.12115486705690216, 0.5305853335481132, -1.405559657552631, 2.238033073618354]
+detected apriltag id list 
+77 78 79 80 81 84 85 86 89 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+  Camera model: pinhole
+  Focal length: [4246.77883083411, 4236.895592965312]
+  Principal point: [2586.610148883905, 1739.812190889978]
+  Distortion model: equidistant
+  Distortion coefficients: [0.12115486705690216, 0.5305853335481132, -1.405559657552631, 2.238033073618354]
+detected apriltag id list 
+76 81 82 83 86 88 90 95 96 97 98 102 103 104   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+  Camera model: pinhole
+  Focal length: [4246.77883083411, 4236.895592965312]
+  Principal point: [2586.610148883905, 1739.812190889978]
+  Distortion model: equidistant
+  Distortion coefficients: [0.12115486705690216, 0.5305853335481132, -1.405559657552631, 2.238033073618354]
+detected apriltag id list 
+76 81 82 83 86 88 90 95 96 97 98 102 103 104   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+  Camera model: pinhole
+  Focal length: [4246.77883083411, 4236.895592965312]
+  Principal point: [2586.610148883905, 1739.812190889978]
+  Distortion model: equidistant
+  Distortion coefficients: [0.12115486705690216, 0.5305853335481132, -1.405559657552631, 2.238033073618354]
+detected apriltag id list 
+76 81 82 83 86 88 90 95 96 97 98 102 103 104   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+  Camera model: pinhole
+  Focal length: [4246.77883083411, 4236.895592965312]
+  Principal point: [2586.610148883905, 1739.812190889978]
+  Distortion model: equidistant
+  Distortion coefficients: [0.12115486705690216, 0.5305853335481132, -1.405559657552631, 2.238033073618354]
+detected apriltag id list 
+76 81 82 83 86 88 90 95 96 97 98 102 103 104   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+  Camera model: pinhole
+  Focal length: [4246.77883083411, 4236.895592965312]
+  Principal point: [2586.610148883905, 1739.812190889978]
+  Distortion model: equidistant
+  Distortion coefficients: [0.12115486705690216, 0.5305853335481132, -1.405559657552631, 2.238033073618354]
+detected apriltag id list 
+76 81 82 83 86 88 90 95 96 97 98 102 103 104 

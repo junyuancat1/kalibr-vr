@@ -1,0 +1,498 @@
+  Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35   Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.072 [m]
+    Spacing 0.0144 [m]
+detected apriltag id list 
+0 3 5 7 8 9 12 13 14 15 19 21 23 24 25 26 28 30 31 32 33 34 35 
