@@ -85,13 +85,18 @@ fresh_rc4w = np.float32([1.40496441, 1.60617537, -1.39236939]).reshape(1,3)
 fresh_tc4w = np.float32([-0.14519866, 0.22861433, 0.25446183]).reshape(3,1)
 fresh_Rc4w, _ = cv2.Rodrigues(fresh_rc4w)
 
-rc2w_2, tc2w_2 = E_from_a_2_b(vr_camera1_Rbc1, vr_camera1_tbc1, vr_camera2_Rbc2, vr_camera2_tbc2, fresh_Rc1w, fresh_tc1w)
-print("tc2w_2: ", tc2w_2 , "====>", fresh_tc2w.T)
-print("rc2w_2: ", rc2w_2.T , "====>", fresh_rc2w)
+rc2w_1, tc2w_1 = E_from_a_2_b(vr_camera1_Rbc1, vr_camera1_tbc1, vr_camera2_Rbc2, vr_camera2_tbc2, fresh_Rc1w, fresh_tc1w)
+print("tc2w_1: ", tc2w_1 , "====>", fresh_tc2w.T)
+print("rc2w_1: ", rc2w_1.T , "====>", fresh_rc2w)
 
-rc3w_3, tc3w_3 = E_from_a_2_b(vr_camera1_Rbc1, vr_camera1_tbc1, vr_camera3_Rbc3, vr_camera3_tbc3, fresh_Rc1w, fresh_tc1w)
-print("tc3w_3: ", tc3w_3 , "====>", fresh_tc3w.T)
-print("rc3w_3: ", rc3w_3.T , "====>", fresh_rc3w)
+rc3w_1, tc3w_1 = E_from_a_2_b(vr_camera1_Rbc1, vr_camera1_tbc1, vr_camera3_Rbc3, vr_camera3_tbc3, fresh_Rc1w, fresh_tc1w)
+print("tc3w_1: ", tc3w_1 , "====>", fresh_tc3w.T)
+print("rc3w_1: ", rc3w_1.T , "====>", fresh_rc3w)
+
+rc4w_1, tc4w_1 = E_from_a_2_b(vr_camera1_Rbc1, vr_camera1_tbc1, vr_camera4_Rbc4, vr_camera4_tbc4, fresh_Rc1w, fresh_tc1w)
+print("tc4w_1: ", tc4w_1 , "====>", fresh_tc4w.T)
+print("rc4w_1: ", rc4w_1.T , "====>", fresh_rc4w)
+
 
 exit(0)
 # plot_axis(ax, vr_camera1_Rbc1, vr_camera1_tbc1 * 100)
