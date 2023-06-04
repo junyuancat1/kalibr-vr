@@ -1,0 +1,4 @@
+trackingA average_reprojection_error:  0.38001963276074824
+trackingB average_reprojection_error:  0.29429219886168834
+ctrltrackingA average_reprojection_error:  0.4025393872051297
+ctrltrackingB average_reprojection_error:  0.5353815223270364

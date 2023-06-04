@@ -27,13 +27,20 @@ tag_point_worlds = np.zeros((0, 3))
 
 def E_from_a_2_b(camera_a_Rbc, camera_a_tbc, camera_b_Rbc, camera_b_tbc, camera_a_Rcw, camera_a_tcw):
 
-    R_camera_a_to_camera_b = np.dot(camera_b_Rbc.T, camera_a_Rbc)
-    T_camera_a_to_camera_b = np.dot(camera_b_Rbc.T, camera_a_tbc - camera_b_tbc)
-    R_camera_b_to_world = np.dot(R_camera_a_to_camera_b, camera_a_Rcw)
-    T_camera_b_to_world = np.dot(R_camera_a_to_camera_b, camera_a_tcw).reshape(1,3) + T_camera_a_to_camera_b
-    r_camera_b_to_world, _ = cv2.Rodrigues(R_camera_b_to_world)
-
-    return r_camera_b_to_world, T_camera_b_to_world
+    camera_a_tbc = camera_a_tbc.reshape(3,1)
+    camera_b_tbc = camera_b_tbc.reshape(3,1)
+    R_camera_a_to_camera_b = np.dot(camera_b_Rbc, camera_a_Rbc.T)
+    T_camera_a_to_camera_b = camera_b_tbc - np.dot(camera_b_Rbc, np.dot(camera_a_Rbc.T, camera_a_tbc))
+    # 世界 -> 相机1
+    R_world_to_camera_a = camera_a_Rcw
+    T_world_to_camera_a = camera_a_tcw.reshape(3,1)
+    print("T_world_to_camera_a", T_world_to_camera_a)
+    # 世界 -> 相机2
+    R_world_to_camera_b = np.dot(R_camera_a_to_camera_b, R_world_to_camera_a)
+    T_world_to_camera_b = np.dot(R_camera_a_to_camera_b, T_world_to_camera_a).reshape(3,1) + T_camera_a_to_camera_b.reshape(3,1)
+    r_world_to_camera_b, _ = cv2.Rodrigues(R_world_to_camera_b)
+    # print("r_world_to_camera_b", r_world_to_camera_b)
+    return r_world_to_camera_b, T_world_to_camera_b
 
 class VRCamera:
     def __init__(self, Size, CameraMatrix: np.ndarray, DistortMatrix: np.ndarray, Extrinsics_R: np.ndarray, Extrinsics_T: np.ndarray):
@@ -66,7 +73,6 @@ class AprilBox:
         self.top_right = top_right
         self.bottom_left = bottom_left
         self.bottom_right = bottom_right
-        print("top_left = ", top_left)
         self.center = [(top_left[0][0] + top_right[0][0] + bottom_left[0][0] + bottom_right[0][0]) / 4, (top_left[0][1] + top_right[0][1] + bottom_left[0][1] + bottom_right[0][1]) / 4]
         self.boardId = int(markerID / 36) + 1
 
@@ -104,8 +110,8 @@ class AprilBox:
         self.bottom_right3d = tag_point_worlds[self.markerId*4 + 1]
         self.top_right3d = tag_point_worlds[self.markerId*4 + 2]
         self.top_left3d = tag_point_worlds[self.markerId*4 + 3]
-        print("image tagid {}, top_left{}, top_right{}, bottom_left{}, bottom_right{}".format(self.markerId, self.top_left, self.top_right, self.bottom_left, self.bottom_right))
-        print("world tagid {}, top_left{}, top_right{}, bottom_left{}, bottom_right{}".format(self.markerId, self.top_left3d, self.top_right3d, self.bottom_left3d, self.bottom_right3d))
+        # print("image tagid {}, top_left{}, top_right{}, bottom_left{}, bottom_right{}".format(self.markerId, self.top_left, self.top_right, self.bottom_left, self.bottom_right))
+        # print("world tagid {}, top_left{}, top_right{}, bottom_left{}, bottom_right{}".format(self.markerId, self.top_left3d, self.top_right3d, self.bottom_left3d, self.bottom_right3d))
 
 class CalibrationTargetDetector(object):
     def __init__(self, camera, targetConfig):
@@ -189,8 +195,8 @@ if __name__ == "__main__":
     cmd_parse_l = "python3 ./vr_validator_left.py --target {} --cam {}  --camera-index 3 --image {} > {}"
     cmd_parse_r = "python3 ./vr_validator_right.py --target {} --cam {} --camera-index 4 --image {} > {}"
 
-    image_file = "./4252229514797.pgm"
-    # image_file = "4250462839129.pgm"
+    # image_file = "./4252229514797.pgm"
+    image_file = "4250462839129.pgm"
     
     
     # step 1 分别识别左右两侧的AprilTag(结果为图片去畸变后的坐标)
@@ -218,7 +224,7 @@ if __name__ == "__main__":
             cornersImage = np.array(coordinates).reshape((4, 2))
             left_image_corners_undistorted = np.vstack((left_image_corners_undistorted, cornersImage))
             left_tag_ids.append(tag_id)
-            print(f'Left Tag ID: {tag_id}, Coordinates: {coordinates}')
+            # print(f'Left Tag ID: {tag_id}, Coordinates: {coordinates}')
     
     left_image_corners_distorted = distortPoints(left_image_corners_undistorted, vr_camera1_K, vr_camera1_D)
 
@@ -235,7 +241,7 @@ if __name__ == "__main__":
             cornersImage = np.array(coordinates).reshape((4, 2))
             right_image_corners_undistorted = np.vstack((right_image_corners_undistorted, cornersImage))
             right_tag_ids.append(tag_id)
-            print(f'Right Tag ID: {tag_id}, Coordinates: {coordinates}')
+            # print(f'Right Tag ID: {tag_id}, Coordinates: {coordinates}')
     
     # print("right_image_corners_undistorted: ", right_image_corners_undistorted)
     right_image_corners_distorted = distortPoints(right_image_corners_undistorted, vr_camera2_K, vr_camera2_D)
@@ -302,7 +308,7 @@ if __name__ == "__main__":
         cv2.putText(img_distort, str(i), (int(left_board_image_point[i][0]), int(left_board_image_point[i][1])), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
     cv2.imwrite("left_img_distort.jpg", img_distort)
     
-    left_undistorted_image_points = cv2.fisheye.undistortPoints(left_board_image_point.reshape(-1, 1, 2), vr_camera1_K, vr_camera1_D)
+    left_undistorted_image_points = cv2.fisheye.undistortPoints(left_board_image_point.reshape(-1, 1, 2), vr_camera3_K, vr_camera3_D)
     # print("left_undistorted_image_points: ", left_undistorted_image_points)
     
     # 无畸变图像上求解相机姿态
@@ -310,9 +316,11 @@ if __name__ == "__main__":
     ID = np.zeros((1,5))
     ret, rc1w, tc1w = cv2.solvePnP(left_board_world_point, left_undistorted_image_points, IK, ID)
     # 根据相机姿态求回畸变图像上的点
-    temp_points, _ = cv2.projectPoints(left_board_world_point.reshape(1, -1, 3), rc1w, tc1w, IK, ID)
+    # temp_points, _ = cv2.projectPoints(left_board_world_point.reshape(1, -1, 3), rc1w, tc1w, IK, ID)
+    temp_points, _ = cv2.fisheye.projectPoints(left_board_world_point.reshape(1, -1, 3), rc1w, tc1w, vr_camera3_K, vr_camera3_D)
     print("camera left rvec: ", rc1w)
     print("camera left tvec: ", tc1w)
+
     # 含畸变的像素点
     # temp_points, _ = cv2.fisheye.projectPoints(left_board_world_point.reshape(1, -1, 3),  rc1w, tc1w, vr_camera1_K, vr_camera1_D)
 
@@ -326,10 +334,8 @@ if __name__ == "__main__":
     
     # step 3.1.v 左侧内参平均重投影误差验证
     left_average_reprojection_error = 0
-    print("len(temp_points[0][0]): ", len(temp_points[0]))
     for i in range (0, len(temp_points[0])):
-        print("temp_points[0][i]: ", temp_points[0][i])
-        left_average_reprojection_error += np.linalg.norm(temp_points[0][i] - left_undistorted_image_points[i])
+        left_average_reprojection_error += np.sqrt(np.square(left_board_image_point[i][0] - temp_points[0][i][0]) + np.square(left_board_image_point[i][1] - temp_points[0][i][1]))
 
     left_average_reprojection_error /= len(temp_points[0])
     print("camera left average_reprojection_error: ", left_average_reprojection_error)
@@ -357,20 +363,25 @@ if __name__ == "__main__":
     
     IK = np.eye(3)
     ID = np.zeros((1,5))
-    right_undistorted_image_points = cv2.fisheye.undistortPoints(right_board_image_point.reshape(-1,1,2), vr_camera2_K, vr_camera2_D)
-    
+    right_undistorted_image_points = cv2.fisheye.undistortPoints(right_board_image_point.reshape(-1,1,2), vr_camera4_K, vr_camera4_D)
+
     ret, rc2w, tc2w = cv2.solvePnP(right_board_world_point, right_undistorted_image_points, IK, ID)
-    temp_points = cv2.projectPoints(right_board_world_point, rc2w, tc2w, IK, ID)
+    # temp_points = cv2.projectPoints(right_board_world_point, rc2w, tc2w, IK, ID)
+    temp_points = cv2.fisheye.projectPoints(right_board_world_point.reshape(1, -1, 3),  rc2w, tc2w, vr_camera4_K, vr_camera4_D)
+    temp_points = temp_points[0]
+    print("len(temp_points): ", len(temp_points))
     print("camera right rvec: ", rc2w)
     print("camera right tvec: ", tc2w)
     
     # step 3.2.v 右侧内参平均重投影误差验证
     right_average_reprojection_error = 0
     for i in range (0, len(temp_points[0])):
-        right_average_reprojection_error += np.linalg.norm(temp_points[0][i] - right_undistorted_image_points[i])
+        # right_average_reprojection_error += np.linalg.norm(temp_points[0][i] - right_undistorted_image_points[i])
+        right_average_reprojection_error += np.linalg.norm(temp_points[0][i] - right_board_image_point[i])
     
     right_average_reprojection_error /= len(temp_points[0])
     print("camera right average_reprojection_error: ", right_average_reprojection_error)
+    
     
     # step 4. 验证外参相机1-> 相机2
     # 原理 标定板世界坐标系已知，假设相机1是准确的， 那么相机1中的tag点renewing是准确的且能和世界系精确投影
@@ -389,7 +400,6 @@ if __name__ == "__main__":
     for tag1 in april_box_left_list:
         for tag2 in april_box_right_list:
             if tag1.markerId == tag2.markerId:
-                print("find common tag: ", tag1.markerId)
                 camera1_common_tag_point_list = np.append(camera1_common_tag_point_list, [np.array([tag1.bottom_left[0][0], tag1.bottom_left[0][1]])], axis=0)
                 camera1_common_tag_point_list = np.append(camera1_common_tag_point_list, [np.array([tag1.bottom_right[0][0], tag1.bottom_right[0][1]])], axis=0)
                 camera1_common_tag_point_list = np.append(camera1_common_tag_point_list, [np.array([tag1.top_left[0][0], tag1.top_left[0][1]])], axis=0)
@@ -426,7 +436,6 @@ if __name__ == "__main__":
     
     # print center
     for tag1 in april_box_left_list:
-        print("tag1 center: ", tag1.center)
         cv2.putText(target_image_color, str(tag1.markerId), (int(tag1.center[0]), int(tag1.center[1])), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,255), 1)
     
     for tag2 in april_box_right_list:
@@ -448,9 +457,7 @@ if __name__ == "__main__":
 
     camera1_points = np.empty((0,3), dtype=np.float32)
     for world_point in point_world_list:
-        print("world_point: ", world_point.reshape(3,1))
         camera1_point = np.dot(Rc1w, world_point.reshape(3,1)) + tc1w
-        print("camera1_point: ", camera1_point)
         point = np.array([camera1_point[0][0], camera1_point[1][0], camera1_point[2][0]])
         camera1_points = np.append(camera1_points, [point], axis=0)
 
@@ -471,10 +478,7 @@ if __name__ == "__main__":
     tc2w_2 = np.dot(Rc2c1,tc1w).reshape(1,3) + tc2c1
     rc2w_2, _ = cv2.Rodrigues(Rc2w_2)
     
-    print("camera1_points: ", camera1_points)
     image2_points, _ = cv2.fisheye.projectPoints(point_world_list.reshape(1, -1, 3), rc2w_2, tc2w_2, vr_camera2_K, vr_camera2_D)
-    
-    print("image2_points: ", image2_points)
    
     img = Image.open(image_file)
     np_img = np.array(img)
@@ -484,7 +488,6 @@ if __name__ == "__main__":
         if image_point[0][index][0] < 0 or image_point[0][index][0] > 640 or image_point[0][index][1] < 0 or image_point[0][index][1] > 480:
             continue
         distance = np.sqrt(np.power(image_point[0][index][0] - camera2_common_tag_point_list[index][0], 2) + np.power(image_point[0][index][1] - camera2_common_tag_point_list[index][1], 2))
-        print("distance: ", distance)
         color = (0, 0, 0)
         if distance < 3: # green point
             color = (0, 255, 0)
@@ -522,7 +525,7 @@ if __name__ == "__main__":
 
 
 
-# camera left rvec:  [[ 0.01867105]
+# camera left rvec:  [[0.01867105]
 #  [ 2.37005514]
 #  [-1.92390398]]
 # camera left tvec:  [[0.19028125]
@@ -538,6 +541,22 @@ if __name__ == "__main__":
 #  [ 0.22861433]
 #  [ 0.25446183]]
 
+
+# camera left rvec:  [[ 0.01503205]
+#  [ 2.36084438]
+#  [-1.9380543 ]]
+# camera left tvec:  [[0.19063579]
+#  [0.23884748]
+#  [0.22340515]]
+# camera left average_reprojection_error:  0.4025393872051297
+# len(temp_points):  1
+# camera right rvec:  [[ 1.40175713]
+#  [ 1.60409248]
+#  [-1.39756435]]
+# camera right tvec:  [[-0.14467937]
+#  [ 0.23015832]
+#  [ 0.25502762]]
+
     fresh_rc1w = np.float32([-1.31864372, 2.66745841, -0.45909558]).reshape(1,3)
     fresh_tc1w = np.float32([0.21389172, 0.11939645, 0.27458963]).reshape(3,1)
     fresh_Rc1w, _ = cv2.Rodrigues(fresh_rc1w)
@@ -546,12 +565,12 @@ if __name__ == "__main__":
     fresh_tc2w = np.float32([-0.21116153, 0.07293855, 0.28693892]).reshape(3,1)
     fresh_Rc2w, _ = cv2.Rodrigues(fresh_rc2w)
 
-    fresh_rc3w = np.float32([0.01867105, 2.37005514, -1.92390398]).reshape(1,3)
-    fresh_tc3w = np.float32([0.19028125, 0.23620335, 0.22807506]).reshape(3,1)
+    fresh_rc3w = np.float32([0.01503205, 2.36084438, -1.9380543]).reshape(1,3)
+    fresh_tc3w = np.float32([0.19063579, 0.23884748, 0.22340515]).reshape(3,1)
     fresh_Rc3w, _ = cv2.Rodrigues(fresh_rc3w)
     
-    fresh_rc4w = np.float32([1.40496441, 1.60617537, -1.39236939]).reshape(1,3)
-    fresh_tc4w = np.float32([-0.14519866, 0.22861433, 0.25446183]).reshape(3,1)
+    fresh_rc4w = np.float32([1.40175713, 1.60409248, -1.39756435]).reshape(1,3)
+    fresh_tc4w = np.float32([-0.14467937, 0.23015832, 0.25502762]).reshape(3,1)
     fresh_Rc4w, _ = cv2.Rodrigues(fresh_rc4w)
     
     image_file_t = "4250462839129.pgm" # 3,4
@@ -579,7 +598,9 @@ if __name__ == "__main__":
     # projection all points to camera1 image
     image1_points, _ = cv2.fisheye.projectPoints(np.array(whole_world_apriltag_points).reshape(1, -1, 3), fresh_rc1w, fresh_tc1w, vr_camera1_K, vr_camera1_D)
     image2_points, _ = cv2.fisheye.projectPoints(np.array(whole_world_apriltag_points).reshape(1, -1, 3), fresh_rc2w, fresh_tc2w, vr_camera2_K, vr_camera2_D)
+    
     image3_points, _ = cv2.fisheye.projectPoints(np.array(whole_world_apriltag_points).reshape(1, -1, 3), fresh_rc3w, fresh_tc3w, vr_camera3_K, vr_camera3_D)
+    
     image4_points, _ = cv2.fisheye.projectPoints(np.array(whole_world_apriltag_points).reshape(1, -1, 3), fresh_rc4w, fresh_tc4w, vr_camera4_K, vr_camera4_D)
 
     image1_points_filter,_ = cv2.projectPoints(np.array(whole_world_apriltag_points).reshape(1, -1, 3), fresh_rc1w, fresh_tc1w, IK, ID)
@@ -650,78 +671,40 @@ if __name__ == "__main__":
     # rc2w_2, _ = cv2.Rodrigues(Rc2w_2)
 
     # Ec1c11Pc1 = Ec2c1Pc2, Ewc1Pw = Pc1  Ewc1Pw = Ec1c1Pc1.inv · Ec1c2 · Pc2,    Ec1c2.inv · Ec1c1 · Ewc1 · Pw = Pc2
-    tc2w_200, rc2w_200 = E_from_a_2_b(vr_camera1_Rbc1, vr_camera1_tbc1, vr_camera2_Rbc2, vr_camera2_tbc2, fresh_Rc1w, fresh_tc1w)
+    rc2w_200, tc2w_200 = E_from_a_2_b(vr_camera1_Rbc1, vr_camera1_tbc1, vr_camera2_Rbc2, vr_camera2_tbc2, fresh_Rc1w, fresh_tc1w)
     image2_points_from_1, _ = cv2.fisheye.projectPoints(np.array(whole_world_apriltag_points).reshape(1, -1, 3), rc2w_200, tc2w_200, vr_camera2_K, vr_camera2_D)
-    print("rc2w_2: ", rc2w_200)
-    print("tc2w_2: ", tc2w_200)
-    print("fresh_rc2w: ", fresh_rc2w)
-    print("fresh_tc2w: ", fresh_tc2w)
-
+    print("rc2w_2: ", rc2w_200.T, "------>", "fresh_rc2w", fresh_rc2w)
+    print("tc2w_2: ", tc2w_200.T, "------>", "fresh_tc2w", fresh_tc2w.T)
 
     # 相机1到相机3的姿态变换
-    # Rc3c1 = np.dot(vr_camera3_Rbc3.T, vr_camera1_Rbc1)
-    # tc3c1 = np.dot(vr_camera3_Rbc3.T, vr_camera1_tbc1 - vr_camera3_tbc3)
-    # Rc3w_1 = np.dot(Rc3c1,fresh_Rc1w)
-    # print("tc3c1: ", tc3c1)
-    # tc3w_1 = np.dot(Rc3c1,fresh_tc1w).reshape(1,3) + tc3c1
-    # rc3w_1, _ = cv2.Rodrigues(Rc3w_1)
-    tc3w_1, rc3w_1 = E_from_a_2_b(vr_camera1_Rbc1, vr_camera1_tbc1, vr_camera3_Rbc3, vr_camera3_tbc3, fresh_Rc1w, fresh_tc1w)
+    rc3w_1, tc3w_1 = E_from_a_2_b(vr_camera1_Rbc1, vr_camera1_tbc1, vr_camera3_Rbc3, vr_camera3_tbc3, fresh_Rc1w, fresh_tc1w)
     image3_points_from_1, _ = cv2.fisheye.projectPoints(np.array(whole_world_apriltag_points).reshape(1, -1, 3), rc3w_1, tc3w_1, vr_camera3_K, vr_camera3_D)
-    print("rc3w_1: ", rc3w_1)
-    print("tc3w_1: ", tc3w_1)
-    print("fresh_rc3w: ", fresh_rc3w)
-    print("fresh_tc3w: ", fresh_tc3w)
+    print("rc3w_1: ", rc3w_1.T, "------>", "fresh_rc3w", fresh_rc3w)
+    print("tc3w_1: ", tc3w_1.T, "------>", "fresh_tc3w", fresh_tc3w.T)
 
-    
     # 相机1到相机4的姿态变换
-    # Rc4c1 = np.dot(vr_camera4_Rbc4.T, vr_camera1_Rbc1)
-    # tc4c1 = np.dot(vr_camera4_Rbc4.T, vr_camera1_tbc1 - vr_camera4_tbc4)
-    # Rc4w_1 = np.dot(Rc4c1,fresh_Rc1w)
-    # tc4w_1 = np.dot(Rc4c1,fresh_tc1w).reshape(1,3) + tc4c1
-    # rc4w_1, _ = cv2.Rodrigues(Rc4w_1)
-    tc4w_1, rc4w_1 = E_from_a_2_b(vr_camera1_Rbc1, vr_camera1_tbc1, vr_camera4_Rbc4, vr_camera4_tbc4, fresh_Rc1w, fresh_tc1w)
+    rc4w_1, tc4w_1  = E_from_a_2_b(vr_camera1_Rbc1, vr_camera1_tbc1, vr_camera4_Rbc4, vr_camera4_tbc4, fresh_Rc1w, fresh_tc1w)
     image4_points_from_1, _ = cv2.fisheye.projectPoints(np.array(whole_world_apriltag_points).reshape(1, -1, 3), rc4w_1, tc4w_1, vr_camera4_K, vr_camera4_D)
-    print("rc4w_1: ", rc4w_1)
-    print("tc4w_1: ", tc4w_1.T)
-    print("fresh_rc4w: ", fresh_rc4w)
-    print("fresh_tc4w: ", fresh_tc4w.T)
+    print("rc4w_1: ", rc4w_1.T, "------>", "fresh_rc4w", fresh_rc4w)
+    print("tc4w_1: ", tc4w_1.T, "------>", "fresh_tc4w", fresh_tc4w.T)
    
-    exit()
    
-    # 相机2到相机3的姿态变换
-    Rc3c2 = np.dot(vr_camera3_Rbc3.T, vr_camera2_Rbc2)
-    tc3c2 = np.dot(vr_camera3_Rbc3.T, vr_camera2_tbc2 - vr_camera3_tbc3)
-    Rc3w_2 = np.dot(Rc3c2,fresh_Rc2w)
-    tc3w_2 = np.dot(Rc3c2,fresh_tc2w).reshape(1,3) + tc3c2
-    rc3w_2, _ = cv2.Rodrigues(Rc3w_2)
+    # 相机2到相机3的姿态变换    
+    rc3w_2, tc3w_2 = E_from_a_2_b(vr_camera2_Rbc2, vr_camera2_tbc2, vr_camera3_Rbc3, vr_camera3_tbc3, fresh_Rc2w, fresh_tc2w)
     image3_points_from_2, _ = cv2.fisheye.projectPoints(np.array(whole_world_apriltag_points).reshape(1, -1, 3), rc3w_2, tc3w_2, vr_camera3_K, vr_camera3_D)
 
     # 相机2到相机4的姿态变换
-    Rc4c2 = np.dot(vr_camera4_Rbc4.T, vr_camera2_Rbc2)
-    tc4c2 = np.dot(vr_camera4_Rbc4.T, vr_camera2_tbc2 - vr_camera4_tbc4)
-    Rc4w_2 = np.dot(Rc4c2,fresh_Rc2w)
-    tc4w_2 = np.dot(Rc4c2,fresh_tc2w).reshape(1,3) + tc4c2
-    rc4w_2, _ = cv2.Rodrigues(Rc4w_2)
+    rc4w_2, tc4w_2 = E_from_a_2_b(vr_camera2_Rbc2, vr_camera2_tbc2, vr_camera4_Rbc4, vr_camera4_tbc4, fresh_Rc2w, fresh_tc2w)
     image4_points_from_2, _ = cv2.fisheye.projectPoints(np.array(whole_world_apriltag_points).reshape(1, -1, 3), rc4w_2, tc4w_2, vr_camera4_K, vr_camera4_D)
     
     # 相机3到相机4的姿态变换
-    Rc4c3 = np.dot(vr_camera4_Rbc4.T, vr_camera3_Rbc3)
-    tc4c3 = np.dot(vr_camera4_Rbc4.T, vr_camera3_tbc3 - vr_camera4_tbc4)
-    Rc4w_3 = np.dot(Rc4c3,fresh_Rc3w)
-    tc4w_3 = np.dot(Rc4c3,fresh_tc3w).reshape(1,3) + tc4c3
-    rc4w_3, _ = cv2.Rodrigues(Rc4w_3)
+    rc4w_3, tc4w_3 = E_from_a_2_b(vr_camera3_Rbc3, vr_camera3_tbc3, vr_camera4_Rbc4, vr_camera4_tbc4, fresh_Rc3w, fresh_tc3w)
     image4_points_from_3, _ = cv2.fisheye.projectPoints(np.array(whole_world_apriltag_points).reshape(1, -1, 3), rc4w_3, tc4w_3, vr_camera4_K, vr_camera4_D)
-    print("rc4w_3: ", rc4w_3)
-    print("tc4w_3: ", tc4w_3)
-    print("fresh_rc4w: ", fresh_rc4w)
-    print("fresh_tc4w: ", fresh_tc4w)
     
     point_in_camera1_indexs = []
     point_in_camera2_indexs = []
     point_in_camera3_indexs = []
     point_in_camera4_indexs = []
-    
-    print("image1_points: ", image1_points)
     
     print("length: ", len(image1_points[0]))
     # draw image1 points

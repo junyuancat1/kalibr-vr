@@ -4,13 +4,36 @@ import cv2
 
 def E_from_a_2_b(camera_a_Rbc, camera_a_tbc, camera_b_Rbc, camera_b_tbc, camera_a_Rcw, camera_a_tcw):
 
-    R_camera_a_to_camera_b = np.dot(camera_b_Rbc.T, camera_a_Rbc)
-    T_camera_a_to_camera_b = np.dot(camera_b_Rbc.T, camera_a_tbc - camera_b_tbc)
-    R_camera_b_to_world = np.dot(R_camera_a_to_camera_b, camera_a_Rcw)
-    T_camera_b_to_world = np.dot(R_camera_a_to_camera_b, camera_a_tcw).reshape(1,3) + T_camera_a_to_camera_b
-    r_camera_b_to_world, _ = cv2.Rodrigues(R_camera_b_to_world)
-
-    return r_camera_b_to_world, T_camera_b_to_world
+    # R_camera_a_to_camera_b = np.dot(camera_b_Rbc.T, camera_a_Rbc)
+    # T_camera_a_to_camera_b = np.dot(camera_b_Rbc.T, camera_a_tbc - camera_b_tbc)
+    # R_camera_b_to_world = np.dot(R_camera_a_to_camera_b, camera_a_Rcw)
+    # T_camera_b_to_world = np.dot(R_camera_a_to_camera_b, camera_a_tcw).reshape(1,3) + T_camera_a_to_camera_b
+    # r_camera_b_to_world, _ = cv2.Rodrigues(R_camera_b_to_world)
+    # return r_camera_b_to_world, T_camera_b_to_world
+    
+    # Rc2w · Pw + tc2w = Pc2, Pw = Rc2w.T · (Pc2 - tc2w)
+    # Rc1w · Pw + tc1w = Pc1, Pw = Rc1w.T · (Pc1 - tc1w)
+    # Rc2w.T · (Pc2 - tc2w) = Rc1w.T · (Pc1 - tc1w), Pc2 = Rc2w · Rc1w.T · (Pc1 - tc1w) + tc2w
+    # Pc2 = Rc2w · Rc1w.T · Pc1 + (tc2w - Rc2w · Rc1w.T · tc1w)
+    # 相机1 -> 相机2
+    #Rc1c2 = Rc2w · Rc1w.T
+    #Tc1c2 = tc2w - Rc2w · Rc1w.T · tc1w
+    # print("camera_a_tbc", camera_a_tbc)
+    camera_a_tbc = camera_a_tbc.reshape(3,1)
+    camera_b_tbc = camera_b_tbc.reshape(3,1)
+    R_camera_a_to_camera_b = np.dot(camera_b_Rbc, camera_a_Rbc.T)
+    T_camera_a_to_camera_b = camera_b_tbc - np.dot(camera_b_Rbc, np.dot(camera_a_Rbc.T, camera_a_tbc))
+    # 世界 -> 相机1
+    R_world_to_camera_a = camera_a_Rcw
+    T_world_to_camera_a = camera_a_tcw.reshape(3,1)
+    print("T_world_to_camera_a", T_world_to_camera_a)
+    # 世界 -> 相机2
+    R_world_to_camera_b = np.dot(R_camera_a_to_camera_b, R_world_to_camera_a)
+    T_world_to_camera_b = np.dot(R_camera_a_to_camera_b, T_world_to_camera_a).reshape(3,1) + T_camera_a_to_camera_b.reshape(3,1)
+    r_world_to_camera_b, _ = cv2.Rodrigues(R_world_to_camera_b)
+    # print("r_world_to_camera_b", r_world_to_camera_b)
+    return r_world_to_camera_b, T_world_to_camera_b
+    
 
 def plot_3d_line(ax, p1, p2, color=None, linestyle='-', linewidth=1.0):
     if color is None:
@@ -58,23 +81,24 @@ vr_camera4_tbc4 = np.array([-0.079096205, 0.064828795, -0.066688745])
 vr_camera4_rbc4, _ = cv2.Rodrigues(vr_camera4_Rbc4)
 Pc4w4 = np.dot(vr_camera4_Rbc4.T, -vr_camera4_tbc4)
 
-print(Pc2w2)
-print(Pc3w3)
-print(Pc4w4)
-
-# exit(0)
-
-
-print(vr_camera2_Rbc2)
-print(vr_camera2_tbc2)
-
+# camera left rvec:  [[-1.5158926   2.7513094  -0.00028456]]
+# camera left tvec:  [[0.48062481 0.35317151 0.00094649]]
+# len(temp_points):  56
+# left_average_reprojection_error = 2908.2645019677634, length = 56
+# camera left average_reprojection_error:  51.933294677995775
+# camera right rvec:  [[-2.888026   -1.23583902  0.00015615]]
+# camera right tvec:  [[0.06909006 0.2932187  0.00091042]]
 
 fresh_rc1w = np.float32([-1.31864372, 2.66745841, -0.45909558]).reshape(1,3)
 fresh_tc1w = np.float32([0.21389172, 0.11939645, 0.27458963]).reshape(3,1)
+# fresh_rc1w = np.float32([-1.5158926, 2.7513094, -0.00028456]).reshape(1,3)
+# fresh_tc1w = np.float32([0.48062481, 0.35317151, 0.00094649]).reshape(3,1)
 fresh_Rc1w, _ = cv2.Rodrigues(fresh_rc1w)
 
 fresh_rc2w = np.float32([-2.78232977, -1.2651627, 0.40838129]).reshape(1,3)
 fresh_tc2w = np.float32([-0.21116153, 0.07293855, 0.28693892]).reshape(3,1)
+# fresh_rc2w = np.float32([-2.888026, -1.23583902, 0.00015615]).reshape(1,3)
+# fresh_tc2w = np.float32([0.06909006, 0.2932187, 0.00091042]).reshape(3,1)
 fresh_Rc2w, _ = cv2.Rodrigues(fresh_rc2w)
 
 fresh_rc3w = np.float32([0.01867105, 2.37005514, -1.92390398]).reshape(1,3)
@@ -86,8 +110,24 @@ fresh_tc4w = np.float32([-0.14519866, 0.22861433, 0.25446183]).reshape(3,1)
 fresh_Rc4w, _ = cv2.Rodrigues(fresh_rc4w)
 
 rc2w_1, tc2w_1 = E_from_a_2_b(vr_camera1_Rbc1, vr_camera1_tbc1, vr_camera2_Rbc2, vr_camera2_tbc2, fresh_Rc1w, fresh_tc1w)
+
+# E · Pw = Pc （Pw是世界坐标系下的点， Pc是相机坐标系下的点， E是相机坐标系到世界坐标系的变换）
+# 
+# 相机外参Ec2
+# Rc2w · Pw + tc2w = Pc2, Pw = Rc2w.T · (Pc2 - tc2w)
+# Rc1w · Pw + tc1w = Pc1, Pw = Rc1w.T · (Pc1 - tc1w)
+# Rc2w.T · (Pc2 - tc2w) = Rc1w.T · (Pc1 - tc1w), Pc2 = Rc2w · Rc1w.T · (Pc1 - tc1w) + tc2w
+# Pc2 = Rc2w · Rc1w.T · Pc1 + (tc2w - Rc2w · Rc1w.T · tc1w)
+
+# 相机1 -> 相机2
+#Rc1c2 = Rc2w · Rc1w.T
+#Tc1c2 = tc2w - Rc2w · Rc1w.T · tc1w
+
+
+
 print("tc2w_1: ", tc2w_1 , "====>", fresh_tc2w.T)
 print("rc2w_1: ", rc2w_1.T , "====>", fresh_rc2w)
+
 
 rc3w_1, tc3w_1 = E_from_a_2_b(vr_camera1_Rbc1, vr_camera1_tbc1, vr_camera3_Rbc3, vr_camera3_tbc3, fresh_Rc1w, fresh_tc1w)
 print("tc3w_1: ", tc3w_1 , "====>", fresh_tc3w.T)
